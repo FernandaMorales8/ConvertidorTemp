@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="icon" href="./img/thermometer.png">
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <div class="parte1">
+            <div class="meteocons--thermometer-fill" id="icon"></div>
+            <h1 class="header1">CONVERTIDOR DE TEMPERATURA</h1>
+
+        </div>
+        
+        <div class="inputs">
+            <h2 class="header2">
+                Datos de entrada
+            </h2>
+            <div class="entradas">
+                <div class="dato">
+                    <label for="">Convertir desde:</label>
+                    <div class="input-data">
+                        <select name="" id="opc">
+                            <option value="1"> Celsius (°C)</option>
+
+                            <option value="2">Fahrenheit (°F)</option>
+
+                            <option value="3">Kelvin (K)</option>
+
+                            <option value="4">Rankine (°R)</option>
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <div class="dato">
+                    <label for="">Ingresa la temperatura:</label>
+                    <div class="input-data">
+                        <input placeholder="Grados" type="number" id="valor">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="boton-alinear">
+            <a onclick="calcular()" class="boton" >Calcular</a>
+        </div>
+
+        <h2 class="header2">Datos de salida</h2>
+
+        <div class="outputs">
+            <div class="salidas">
+                <div class="dato">
+
+                    <label for="">Celsius (°C):</label>
+                    <input disabled class="input-data" type="number" id="celsius">
+     
+                </div>
+
+                <div class="dato">
+
+                    <label for="">Fahrenheit (°F):</label>
+                    <input disabled class="input-data" type="number" id="fahrenheit">
+     
+                </div>
+
+                <div class="dato">
+
+                    <label for="">Kelvin (K):</label>
+                    <input disabled class="input-data" type="number" id="kelvin">
+     
+                </div>
+
+                <div class="dato">
+
+                    <label for="">Rankine (°R):</label>
+                    <input disabled class="input-data" type="number" id="rankine">
+     
+                </div>
+
+            </div>
+        </div>
+
+        </div>
+    </div>
+    <script src="./JS/convertidor.js"></script>
+    
+</body>
+</html>
